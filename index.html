@@ -1,27 +1,121 @@
 <html>
-<head>
-<title>virtualdatacave.com</title>
-<style>
-body { color: #808080; font-family: terminal, monaco, monospace; background-color: #000000; }
-h1 { color: #e0e0e0; }
-a { color: #808080; }
-#outer { width: 100%; }
-#inner { width: 600px; margin: 0 auto; text-align: center; }
-h1 { padding-top: 25px; }
-p { padding-top: 25px; font-size: 20px; }
-</style>
-</head>
-<body>
-<div>
-<div id="outer">
-    <div id="inner">
-        <h1>virtualdatacave.com</h1>
-        <p>...is undergoing a (much needed) refresh.  it may be some considerable time before this is complete.</p>
-        <p></p>
-        <p><a href="note.html">Note to my former readers</a></p>
-	<p><img src="tractor-inverted.png" width="100px"></p>
-        <p><a href="https://github.com/jeffgreenca/">jeffgreenca @ github</a></p>
+    <head>
+        <title>virtualdatacave.com</title>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Roboto+Slab|Source+Code+Pro&display=swap" rel="stylesheet">
+        <style>
+            :root {
+                --color0: #000000;
+                --color1: #ccdbdc;
+                --color2: #8e6c88;
+                --color3: #263d42;
+                --color4: #8aadb6;
+                --color5: #0d160b;
+                --color8: #e8e8e8;
+                --color9: #ffffff;
+            }
+            #outer { 
+                width: 100%;
+            }
+            #inner { 
+                width: 800px; 
+                margin: 0 auto;
+            }
+
+            body { 
+                background-color: var(--color8);
+                color: var(--color0);
+            }
+
+            body, h1 {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            h1 { 
+                font-family: 'Roboto Slab', serif;
+                color: var(--color3);
+            }
+            h2, h3, h4, h5 { 
+                font-family: 'Roboto Slab', serif;
+                color: var(--color5);
+            }
+
+            p {
+                font-family: 'IBM Plex Serif', serif;
+                font-size: 1.4em;
+            }
+
+            pre {
+                font-family: 'Source Code Pro', monospace;
+                font-size: 1.2em;
+                padding: 8px;
+                background-color: var(--color1);
+                color: var(--color5);
+            }
+
+            hr {
+                border: 2px solid var(--color3);
+            }
+        </style>
+        <script>
+            function refresh() {
+                setTimeout(function() { location.href = location.href; }, 800)
+            }
+        </script>
+    </head>
+    <body onload="refresh();">
+    <div>
+    <div id="outer">
+        <div id="inner">
+            <h1>vdc - a tech professional's journal</h1>
+<hr>
+<h2>in which I write about some stuff</h2>
+June 25th 2019
+<p>
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
+quidem rerum facilis est et expedita distinctio.
+</p>
+<pre>
+#!/usr/bin/python3
+import owl
+
+owl.hoot()
+</pre>
+<p>
+Nam libero tempore, cum soluta
+nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+repellat.
+</p>
+
+<hr>
+
+<h2>and I write about some other things</h2>
+June 25th 2019
+<p>
+Not much to say yet, actually.
+</p>
+<hr>
+        </div>
     </div>
-</div>
-</body>
+    <!--
+    <div id="outer">
+        <div id="inner">
+            <h1>virtualdatacave.com</h1>
+            <p>...is undergoing a (much needed) refresh.  it may be some considerable time before this is complete.</p>
+            <p></p>
+            <p><a href="note.html">Note to my former readers</a></p>
+        <p><img src="tractor-inverted.png" width="100px"></p>
+            <p><a href="https://github.com/jeffgreenca/">jeffgreenca @ github</a></p>
+        </div>
+    </div>
+    -->
+    </body>
 </html>
